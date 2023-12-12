@@ -61,67 +61,67 @@ func Version() string {
 	return version
 }
 
-type Chalko struct {
+type ChalkGo struct {
     codes []string
 }
 
-func (s Chalko) Add(code string) Chalko {
+func (s ChalkGo) Add(code string) ChalkGo {
     s.codes = append(s.codes, code)
     return s
 }
 
-func (s Chalko) ToString(text string) string {
+func (s ChalkGo) ToString(text string) string {
     return strings.Join(s.codes, "") + text + Reset
 }
 
 // style
-func (s Chalko) Bold() Chalko { return s.Add(Bold) }
-func (s Chalko) Dim() Chalko { return s.Add(Dim) }
-func (s Chalko) Italic() Chalko { return s.Add(Italic) }
-func (s Chalko) Underline() Chalko { return s.Add(Underline) }
-func (s Chalko) Overline() Chalko { return s.Add(Overline) }
-func (s Chalko) Inverse() Chalko { return s.Add(Inverse) }
-func (s Chalko) Hidden() Chalko { return s.Add(Hidden) }
-func (s Chalko) Strikethrough() Chalko { return s.Add(Strikethrough) }
-func (s Chalko) Visible() Chalko { return s.Add(Visible) }
+func (s ChalkGo) Bold() ChalkGo { return s.Add(Bold) }
+func (s ChalkGo) Dim() ChalkGo { return s.Add(Dim) }
+func (s ChalkGo) Italic() ChalkGo { return s.Add(Italic) }
+func (s ChalkGo) Underline() ChalkGo { return s.Add(Underline) }
+func (s ChalkGo) Overline() ChalkGo { return s.Add(Overline) }
+func (s ChalkGo) Inverse() ChalkGo { return s.Add(Inverse) }
+func (s ChalkGo) Hidden() ChalkGo { return s.Add(Hidden) }
+func (s ChalkGo) Strikethrough() ChalkGo { return s.Add(Strikethrough) }
+func (s ChalkGo) Visible() ChalkGo { return s.Add(Visible) }
 
 // color
-func (s Chalko) Black() Chalko { return s.Add(Black) }
-func (s Chalko) Red() Chalko { return s.Add(Red) }
-func (s Chalko) Green() Chalko { return s.Add(Green) }
-func (s Chalko) Yellow() Chalko { return s.Add(Yellow) }
-func (s Chalko) Blue() Chalko { return s.Add(Blue) }
-func (s Chalko) Magenta() Chalko { return s.Add(Magenta) }
-func (s Chalko) Cyan() Chalko { return s.Add(Cyan) }
-func (s Chalko) White() Chalko { return s.Add(White) }
-func (s Chalko) BlackBright() Chalko { return s.Add(BlackBright) }
-func (s Chalko) RedBright() Chalko { return s.Add(RedBright) }
-func (s Chalko) GreenBright() Chalko { return s.Add(GreenBright) }
-func (s Chalko) YellowBright() Chalko { return s.Add(YellowBright) }
-func (s Chalko) BlueBright() Chalko { return s.Add(BlueBright) }
-func (s Chalko) MagentaBright() Chalko { return s.Add(MagentaBright) }
-func (s Chalko) CyanBright() Chalko { return s.Add(CyanBright) }
-func (s Chalko) WhiteBright() Chalko { return s.Add(WhiteBright) }
+func (s ChalkGo) Black() ChalkGo { return s.Add(Black) }
+func (s ChalkGo) Red() ChalkGo { return s.Add(Red) }
+func (s ChalkGo) Green() ChalkGo { return s.Add(Green) }
+func (s ChalkGo) Yellow() ChalkGo { return s.Add(Yellow) }
+func (s ChalkGo) Blue() ChalkGo { return s.Add(Blue) }
+func (s ChalkGo) Magenta() ChalkGo { return s.Add(Magenta) }
+func (s ChalkGo) Cyan() ChalkGo { return s.Add(Cyan) }
+func (s ChalkGo) White() ChalkGo { return s.Add(White) }
+func (s ChalkGo) BlackBright() ChalkGo { return s.Add(BlackBright) }
+func (s ChalkGo) RedBright() ChalkGo { return s.Add(RedBright) }
+func (s ChalkGo) GreenBright() ChalkGo { return s.Add(GreenBright) }
+func (s ChalkGo) YellowBright() ChalkGo { return s.Add(YellowBright) }
+func (s ChalkGo) BlueBright() ChalkGo { return s.Add(BlueBright) }
+func (s ChalkGo) MagentaBright() ChalkGo { return s.Add(MagentaBright) }
+func (s ChalkGo) CyanBright() ChalkGo { return s.Add(CyanBright) }
+func (s ChalkGo) WhiteBright() ChalkGo { return s.Add(WhiteBright) }
 
 // background color
-func (s Chalko) BgBlack() Chalko { return s.Add(BgBlack) }
-func (s Chalko) BgRed() Chalko { return s.Add(BgRed) }
-func (s Chalko) BgGreen() Chalko { return s.Add(BgGreen) }
-func (s Chalko) BgYellow() Chalko { return s.Add(BgYellow) }
-func (s Chalko) BgBlue() Chalko { return s.Add(BgBlue) }
-func (s Chalko) BgMagenta() Chalko { return s.Add(BgMagenta) }
-func (s Chalko) BgCyan() Chalko { return s.Add(BgCyan) }
-func (s Chalko) BgWhite() Chalko { return s.Add(BgWhite) }
-func (s Chalko) BgBlackBright() Chalko { return s.Add(BgBlackBright) }
-func (s Chalko) BgRedBright() Chalko { return s.Add(BgRedBright) }
-func (s Chalko) BgGreenBright() Chalko { return s.Add(BgGreenBright) }
-func (s Chalko) BgYellowBright() Chalko { return s.Add(BgYellowBright) }
-func (s Chalko) BgBlueBright() Chalko { return s.Add(BgBlueBright) }
-func (s Chalko) BgMagentaBright() Chalko { return s.Add(BgMagentaBright) }
-func (s Chalko) BgCyanBright() Chalko { return s.Add(BgCyanBright) }
-func (s Chalko) BgWhiteBright() Chalko { return s.Add(BgWhiteBright) }
+func (s ChalkGo) BgBlack() ChalkGo { return s.Add(BgBlack) }
+func (s ChalkGo) BgRed() ChalkGo { return s.Add(BgRed) }
+func (s ChalkGo) BgGreen() ChalkGo { return s.Add(BgGreen) }
+func (s ChalkGo) BgYellow() ChalkGo { return s.Add(BgYellow) }
+func (s ChalkGo) BgBlue() ChalkGo { return s.Add(BgBlue) }
+func (s ChalkGo) BgMagenta() ChalkGo { return s.Add(BgMagenta) }
+func (s ChalkGo) BgCyan() ChalkGo { return s.Add(BgCyan) }
+func (s ChalkGo) BgWhite() ChalkGo { return s.Add(BgWhite) }
+func (s ChalkGo) BgBlackBright() ChalkGo { return s.Add(BgBlackBright) }
+func (s ChalkGo) BgRedBright() ChalkGo { return s.Add(BgRedBright) }
+func (s ChalkGo) BgGreenBright() ChalkGo { return s.Add(BgGreenBright) }
+func (s ChalkGo) BgYellowBright() ChalkGo { return s.Add(BgYellowBright) }
+func (s ChalkGo) BgBlueBright() ChalkGo { return s.Add(BgBlueBright) }
+func (s ChalkGo) BgMagentaBright() ChalkGo { return s.Add(BgMagentaBright) }
+func (s ChalkGo) BgCyanBright() ChalkGo { return s.Add(BgCyanBright) }
+func (s ChalkGo) BgWhiteBright() ChalkGo { return s.Add(BgWhiteBright) }
 
 
 // func main() {
-//     fmt.Println(Chalko{}.Red().Bold().Underline().ToString("This is a red, bold, underlined text"))
+//     fmt.Println(ChalkGo{}.Red().Bold().Underline().ToString("This is a red, bold, underlined text"))
 // }

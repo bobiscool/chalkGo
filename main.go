@@ -1,3 +1,5 @@
+package main
+
 import (
 	"github.com/bobiscool/chalkGo"
 )
@@ -5,3 +7,4 @@ import (
 func main() {
 	gchalk.Style{}.Red().Bold().Apply("Hello World")
 }
+
